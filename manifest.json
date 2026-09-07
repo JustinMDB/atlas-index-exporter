@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Atlas Index Exporter",
+  "author": "Justin Ledgard",
+  "version": "1.0.0",
+  "description": "View and copy MongoDB Atlas index summaries as JSON.",
+  "content_scripts": [
+    {
+      "matches": ["https://cloud.mongodb.com/v2/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
